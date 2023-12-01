@@ -15,7 +15,7 @@ export function readNodes() {
 
   try {
     nodes = JSON.parse(
-      fs.readFileSync(path.join(__dirname, "./sandbox.json")).toString().trim()
+      fs.readFileSync(path.join(__dirname, "./sandbox.json")).toString().trim(),
     );
   } catch (e) {}
 
@@ -32,11 +32,11 @@ export async function createNewDeployment(node, forkingChainId) {
 
   fs.writeFileSync(
     path.join(__dirname, "./sandbox.json"),
-    JSON.stringify(node, null, 2)
+    JSON.stringify(node, null, 2),
   );
   fs.writeFileSync(
     path.join(__dirname, "../nextjs/sandbox.json"),
-    JSON.stringify(node, null, 2)
+    JSON.stringify(node, null, 2),
   );
 
   console.log("SandBox details stored in packages/buildbear/sandbox.json");

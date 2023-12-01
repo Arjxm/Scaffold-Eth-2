@@ -108,10 +108,10 @@ else {
   console.log("Wrong command format");
   console.log("Faucet command format: ");
   console.log(
-    "1. For native tokens use: yarn faucet-bb native <Insert Amount (optional)> <Insert Your Wallet Address>"
+    "1. For native tokens use: yarn faucet-bb native <Insert Amount (optional)> <Insert Your Wallet Address>",
   );
   console.log(
-    "1. For erc20 tokens use: yarn faucet-bb USDC <Insert Amount (optional)> <Insert Your Wallet Address>"
+    "1. For erc20 tokens use: yarn faucet-bb USDC <Insert Amount (optional)> <Insert Your Wallet Address>",
   );
   console.log("Instead of USDC you can use :");
   erc20TokenNames.forEach((token) => {

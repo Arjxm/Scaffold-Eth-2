@@ -104,7 +104,7 @@ async function createFork() {
     });
 
   const createNodeSpinner = ora(
-    `Creating a new ${network} fork on Buildbear...`
+    `Creating a new ${network} fork on Buildbear...`,
   ).start();
 
   const data = JSON.stringify({

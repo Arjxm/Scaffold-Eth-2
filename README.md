@@ -8,10 +8,9 @@
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
 
-
 **Scaffold-Eth 2 x Buildbear** lets you create your own private Sandbox, (optional)forked for various EVM and EVM-compatible blockchain networks, with your own Token faucet and blockchain explorer
 
-# Key Features 
+# Key Features
 
 ### 1. Creating your private testnet
 
@@ -21,9 +20,10 @@
 
 ![image](https://strapi.buildbear.io/uploads/Faucet_Build_Bear_2_7b9242dfd4.png?updated_at=2023-11-30T12:01:35.614Z)
 
-### 3. Effortlessly debug transactions within your sandbox using the built-in explorer and transaction tracer. 
+### 3. Effortlessly debug transactions within your sandbox using the built-in explorer and transaction tracer.
 
 ![image](https://docs.buildbear.io/assets/images/Explorer-BuildBear-67ded7eae622ab211611acd5986ecf41.png)
+
 ### 4. Experience rapid transactions on BuildBear, completing in under 3 seconds.
 
 ![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/1171422a-0ce4-4203-bcd4-d2d1941d198b)
