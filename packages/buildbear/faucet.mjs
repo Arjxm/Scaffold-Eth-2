@@ -25,18 +25,19 @@ function nativeFaucet() {
     walletAddress = args[2];
   }
 
-  const data = JSON.stringify({
-    address: walletAddress,
-    balance,
-  });
+  const data = {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "buildbear_nativeFaucet",
+    "params": [{
+      "address": walletAddress,
+      "balance": balance
+    }]
+  }
 
   const config = {
     method: "post",
-    url: `${BB_BACKEND_URL}/node/faucet/native/${nodesData.nodeId}`,
-    headers: {
-      Authorization: `Bearer ${BB_API_KEY}`,
-      "Content-Type": "application/json",
-    },
+    url: nodesData.rpcUrl,
     data,
   };
 
@@ -61,19 +62,20 @@ function erc20Faucet() {
     walletAddress = args[2];
   }
 
-  const data = JSON.stringify({
-    address: walletAddress,
-    token: tokenAddress,
-    balance,
-  });
+  const data = {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "buildbear_ERC20Faucet",
+    "params": [{
+      "address": walletAddress,
+      "balance": balance,
+      "token": tokenAddress
+    }]
+  }
 
   const config = {
     method: "post",
-    url: `${BB_BACKEND_URL}/node/faucet/erc20/${nodesData.nodeId}`,
-    headers: {
-      Authorization: `Bearer ${BB_API_KEY}`,
-      "Content-Type": "application/json",
-    },
+    url: nodesData.rpcUrl,
     data,
   };
 
